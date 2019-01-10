@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pAj-p2-FME">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reveal View Controller-->
+        <scene sceneID="gtP-RA-GPK">
+            <objects>
+                <viewController id="pAj-p2-FME" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iFM-g0-1dY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="pMe-mj-yO3"/>
+                    </view>
+                    <connections>
+                        <segue destination="M5m-E9-tyo" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="TgG-xv-SXN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bHi-IY-6R1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-766" y="-143"/>
+        </scene>
+        <!--Left MenuVC-->
+        <scene sceneID="mus-xu-n39">
+            <objects>
+                <viewController storyboardIdentifier="LeftMenuVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="M5m-E9-tyo" customClass="LeftMenuVC" customModule="ParkOye" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="adX-xw-XCq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zoc-sy-m1C">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="UserCell" rowHeight="103" id="FBU-fI-EYD" customClass="UserCell" customModule="ParkOye" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="103"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FBU-fI-EYD" id="tFV-Rb-pe2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="102.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugG-qV-b0w">
+                                                    <rect key="frame" x="10" y="10" width="116" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERd-h7-y0U">
+                                                    <rect key="frame" x="10" y="41" width="110.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.27058823529999998" green="0.58039215690000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="ugG-qV-b0w" firstAttribute="top" secondItem="tFV-Rb-pe2" secondAttribute="top" constant="10" id="16A-85-ge4"/>
+                                                <constraint firstItem="ERd-h7-y0U" firstAttribute="top" secondItem="ugG-qV-b0w" secondAttribute="bottom" constant="10" id="WwD-AL-p9c"/>
+                                                <constraint firstItem="ugG-qV-b0w" firstAttribute="leading" secondItem="tFV-Rb-pe2" secondAttribute="leading" constant="10" id="fIn-O5-Ooe"/>
+                                                <constraint firstItem="ERd-h7-y0U" firstAttribute="leading" secondItem="ugG-qV-b0w" secondAttribute="leading" id="sFQ-OJ-MME"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="useremail" destination="ERd-h7-y0U" id="twX-NW-oPL"/>
+                                            <outlet property="username" destination="ugG-qV-b0w" id="Ane-1E-ynP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="103" id="e0r-Bb-6Ep">
+                                        <rect key="frame" x="0.0" y="131" width="375" height="103"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e0r-Bb-6Ep" id="vjn-zY-Z2a">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="102.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="M5m-E9-tyo" id="6XD-p8-ldO"/>
+                                    <outlet property="delegate" destination="M5m-E9-tyo" id="pHF-lz-ely"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1YE-cb-lCi" firstAttribute="bottom" secondItem="zoc-sy-m1C" secondAttribute="bottom" id="5wr-9r-NsE"/>
+                            <constraint firstItem="zoc-sy-m1C" firstAttribute="top" secondItem="1YE-cb-lCi" secondAttribute="top" id="XYh-XR-qJ1"/>
+                            <constraint firstItem="zoc-sy-m1C" firstAttribute="leading" secondItem="1YE-cb-lCi" secondAttribute="leading" id="i1L-U2-mOx"/>
+                            <constraint firstItem="1YE-cb-lCi" firstAttribute="trailing" secondItem="zoc-sy-m1C" secondAttribute="trailing" id="xt1-kL-c6D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1YE-cb-lCi"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="zoc-sy-m1C" id="Ji9-aT-lRd"/>
+                        <segue destination="WrL-VA-wRB" kind="custom" identifier="Logout" customClass="SWRevealViewControllerSeguePushController" id="rvS-IS-aan"/>
+                        <segue destination="yiI-4Q-Ac2" kind="custom" identifier="Home" customClass="SWRevealViewControllerSeguePushController" id="1fu-aI-1ln"/>
+                        <segue destination="yiI-4Q-Ac2" kind="custom" identifier="Share this App" customClass="SWRevealViewControllerSeguePushController" id="kv9-t5-TG9"/>
+                        <segue destination="c5C-zs-SRA" kind="custom" identifier="Contact Us" customClass="SWRevealViewControllerSeguePushController" id="YIw-Ly-jbE"/>
+                        <segue destination="c5C-zs-SRA" kind="custom" identifier="Suggestions &amp; Feedback" customClass="SWRevealViewControllerSeguePushController" id="jtQ-SC-NDM"/>
+                        <segue destination="QnR-VS-Uix" kind="custom" identifier="Search NearBy" customClass="SWRevealViewControllerSeguePushController" id="Lap-lG-7w0"/>
+                        <segue destination="yiI-4Q-Ac2" kind="custom" identifier="Valet" customClass="SWRevealViewControllerSeguePushController" id="t3Q-zH-75R"/>
+                        <segue destination="EcX-HH-G72" kind="custom" identifier="S.O.S" customClass="SWRevealViewControllerSeguePushController" id="fJH-24-tLa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ATe-bv-cbX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="152.80000000000001" y="-114.69265367316342"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="WTh-0D-E7M">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="WrL-VA-wRB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vid-is-ozg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790" y="-281"/>
+        </scene>
+        <!--SOS-->
+        <scene sceneID="TWN-j3-5Ad">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SOS" id="EcX-HH-G72" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gCL-eK-w3x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="887" y="-242"/>
+        </scene>
+        <!--Suggestion-->
+        <scene sceneID="HdJ-G6-8fi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Suggestion" id="c5C-zs-SRA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a9q-Ba-M3r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921" y="-196"/>
+        </scene>
+        <!--Nearby-->
+        <scene sceneID="Z9Z-PS-UQg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Nearby" id="QnR-VS-Uix" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggY-Y9-Lj4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="874" y="-135"/>
+        </scene>
+        <!--Dashboard-->
+        <scene sceneID="sAD-yF-kwf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Dashboard" id="yiI-4Q-Ac2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DHI-ic-Eq5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="-17"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="t3Q-zH-75R"/>
+        <segue reference="YIw-Ly-jbE"/>
+    </inferredMetricsTieBreakers>
+</document>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dlf" translatesAutoresizingMaskIntoConstraints="NO" id="J7A-Cx-gnn">
+                                <rect key="frame" x="87.5" y="70" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ZJk-uq-6DU"/>
+                                    <constraint firstAttribute="width" secondItem="J7A-Cx-gnn" secondAttribute="height" multiplier="1:1" id="wHz-Wl-TiX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="TJf-i4-ea6">
+                                <rect key="frame" x="20" y="300" width="335" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Multilevel Parking Sector 18 Noida" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="hIC-9S-5wT">
+                                <rect key="frame" x="20" y="334" width="335" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nxY-qH-77n">
+                                <rect key="frame" x="72.5" y="607" width="230" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered By - " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rvn-W9-JqY">
+                                        <rect key="frame" x="0.0" y="14.5" width="112.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parkingLogo" translatesAutoresizingMaskIntoConstraints="NO" id="bI9-B1-6qD">
+                                        <rect key="frame" x="117.5" y="5" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="mHZ-Ew-FjQ"/>
+                                            <constraint firstAttribute="width" constant="40" id="qwm-bl-5OX"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Park Oye" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hl-DH-v7f">
+                                        <rect key="frame" x="162.5" y="16" width="61" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="HAI-nO-922"/>
+                                    <constraint firstItem="Rvn-W9-JqY" firstAttribute="centerY" secondItem="nxY-qH-77n" secondAttribute="centerY" id="Hz4-Kz-vAb"/>
+                                    <constraint firstItem="Rvn-W9-JqY" firstAttribute="leading" secondItem="nxY-qH-77n" secondAttribute="leading" id="Idj-uY-53b"/>
+                                    <constraint firstAttribute="height" constant="50" id="SCH-Ea-aZU"/>
+                                    <constraint firstItem="7Hl-DH-v7f" firstAttribute="leading" secondItem="bI9-B1-6qD" secondAttribute="trailing" constant="5" id="jdn-eI-wFz"/>
+                                    <constraint firstItem="7Hl-DH-v7f" firstAttribute="centerY" secondItem="bI9-B1-6qD" secondAttribute="centerY" id="o0X-jg-FQE"/>
+                                    <constraint firstItem="bI9-B1-6qD" firstAttribute="leading" secondItem="Rvn-W9-JqY" secondAttribute="trailing" constant="5" id="wOo-eg-vTB"/>
+                                    <constraint firstItem="bI9-B1-6qD" firstAttribute="centerY" secondItem="Rvn-W9-JqY" secondAttribute="centerY" id="ync-Uu-ksT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TJf-i4-ea6" secondAttribute="trailing" constant="20" id="7qi-fj-1Ry"/>
+                            <constraint firstItem="J7A-Cx-gnn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Fru-6D-1nt"/>
+                            <constraint firstItem="nxY-qH-77n" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="J31-EA-pbO"/>
+                            <constraint firstItem="J7A-Cx-gnn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="KYz-gG-s8m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hIC-9S-5wT" secondAttribute="trailing" constant="20" id="TJZ-Kg-ayh"/>
+                            <constraint firstItem="hIC-9S-5wT" firstAttribute="centerX" secondItem="TJf-i4-ea6" secondAttribute="centerX" id="TPX-5r-NxZ"/>
+                            <constraint firstItem="TJf-i4-ea6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WFb-2n-Gwe"/>
+                            <constraint firstItem="TJf-i4-ea6" firstAttribute="centerX" secondItem="J7A-Cx-gnn" secondAttribute="centerX" id="Ytb-sw-QuU"/>
+                            <constraint firstItem="TJf-i4-ea6" firstAttribute="top" secondItem="J7A-Cx-gnn" secondAttribute="bottom" constant="30" id="jpH-aW-FAE"/>
+                            <constraint firstItem="hIC-9S-5wT" firstAttribute="top" secondItem="TJf-i4-ea6" secondAttribute="bottom" constant="10" id="lfe-tJ-IC2"/>
+                            <constraint firstItem="hIC-9S-5wT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="n5l-0O-CX1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nxY-qH-77n" secondAttribute="bottom" constant="10" id="xIt-BU-L79"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dlf" width="400" height="400"/>
+        <image name="parkingLogo" width="1024" height="1024"/>
+    </resources>
+</document>
