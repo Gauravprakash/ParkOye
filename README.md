@@ -1,0 +1,1 @@
+# ParkOye is a Parking based Application where users can check space for allotment for parking to park their cars, if they found they can navigate to the same from their current location. Also they can make use of near by and sos services. 
